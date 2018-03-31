@@ -2907,3 +2907,143 @@ Processing by ArticlesController#index as HTML
 Completed 200 OK in 36ms (Views: 30.5ms | ActiveRecord: 0.2ms)
 
 
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/articles/new" for 127.0.0.1 at 2018-03-31 21:11:18 +0300
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (40.1ms)
+Completed 200 OK in 364ms (Views: 316.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2018-03-31 21:11:20 +0300
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 72ms (Views: 67.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2018-03-31 21:11:22 +0300
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 36ms (Views: 32.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2018-03-31 21:14:26 +0300
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (11.8ms)
+Completed 200 OK in 49ms (Views: 43.7ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2018-03-31 21:14:52 +0300
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 44ms (Views: 40.5ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/articles/1" for 127.0.0.1 at 2018-03-31 21:14:55 +0300
+Processing by ArticlesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"rEMLjrunqROG3xKWXfDQqqLRPvXEFUNm/ZTwmI7ytqjI8ovl1OnRE9+Db833dzCaFldOMpnCR2tJKv8rAvS2Kg==", "id"=>"1"}
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[31mDELETE FROM "articles" WHERE "articles"."id" = ?[0m  [["id", 1]]
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://0.0.0.0:3000/articles
+Completed 302 Found in 16ms (ActiveRecord: 3.6ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2018-03-31 21:14:55 +0300
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (1.0ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 61ms (Views: 51.6ms | ActiveRecord: 1.0ms)
+
+
+Started DELETE "/articles/2" for 127.0.0.1 at 2018-03-31 21:14:59 +0300
+Processing by ArticlesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"uqbcfs859c6hNWrdSlV3XLiY1lBMv2biLBGinf+X41feF1wVoHeNzvhpF4bg0pdsDB6mlxFoYu+Yr60uc5Hj1Q==", "id"=>"2"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[31mDELETE FROM "articles" WHERE "articles"."id" = ?[0m  [["id", 2]]
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://0.0.0.0:3000/articles
+Completed 302 Found in 8ms (ActiveRecord: 3.2ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2018-03-31 21:14:59 +0300
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 58ms (Views: 52.7ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/articles/7" for 127.0.0.1 at 2018-03-31 21:15:05 +0300
+Processing by ArticlesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"MlP94dhRRrHgQ0UM3nnsjSlMSnYW2hnJtaV9tZpE4ABW4n2Ktx8+sbkfOFd0/gy9nco6sUsNHcQBG3IGFkLggg==", "id"=>"7"}
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[31mDELETE FROM "articles" WHERE "articles"."id" = ?[0m  [["id", 7]]
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://0.0.0.0:3000/articles
+Completed 302 Found in 10ms (ActiveRecord: 3.7ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2018-03-31 21:15:05 +0300
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 60ms (Views: 56.5ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/articles/8" for 127.0.0.1 at 2018-03-31 21:15:08 +0300
+Processing by ArticlesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"keaN2J5P5u4aSPalh+yEAHIDDSiVV7B1tsEQlxEMvZn1Vw2z8QGe7kMUi/4ta2QwxoV978iAtHgCfx8knQq9Gw==", "id"=>"8"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "articles" WHERE "articles"."id" = ?[0m  [["id", 8]]
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://0.0.0.0:3000/articles
+Completed 302 Found in 7ms (ActiveRecord: 2.7ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2018-03-31 21:15:08 +0300
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 49ms (Views: 44.1ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/articles/9" for 127.0.0.1 at 2018-03-31 21:15:11 +0300
+Processing by ArticlesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"TBS/ZmLM7mL+yFrozl2uPJYaVso40r1fRh2MrMfcb7UopT8NDYKWYqeUJ7Nk2k4MIpwmDWUFuVLyo4MfS9pvNw==", "id"=>"9"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "articles" WHERE "articles"."id" = ?[0m  [["id", 9]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://0.0.0.0:3000/articles
+Completed 302 Found in 5ms (ActiveRecord: 2.4ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2018-03-31 21:15:11 +0300
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 36ms (Views: 32.3ms | ActiveRecord: 0.3ms)
+
+
