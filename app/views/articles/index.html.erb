@@ -1,0 +1,20 @@
+<h1>Listing articles</h1>
+<%= link_to 'New article', new_article_path %>
+<div style = "background: #fc0;box-shadow: 0 0 10px rgba(0,0,0,0.5);border-radius: 10px;padding: 10px;margin: 20px  5px;height: auto;width: auto;">
+<table style="margin:20px 10px">
+    <tr>
+      <th>Title</th>
+      <th>Text</th>
+      <th colspan="2"></th>
+    </tr>
+
+    <% @articles.each do |article| %>
+      <tr>
+        <td><%= article.title %></td>
+        <td><%= article.text %></td>
+        <td><%= link_to 'Show', article_path(article) %></td>
+        <td><%= link_to 'Edit', edit_article_path(article) %></td>
+      </tr>
+    <% end %>
+  </table>
+</div>

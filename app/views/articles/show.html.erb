@@ -1,0 +1,16 @@
+<div align="center" style="margin: 30px 300px;padding: auto;width: auto;height: auto;box-shadow: 0 0 10px rgba(0,0,0,0.5);border-radius: 10px;background:  #fc0">
+  <br>
+  <p>
+  <strong>Title:</strong>
+  <%= @article.title %>
+</p>
+
+<p>
+  <strong>Text:</strong>
+  <%= @article.text %>
+</p>
+  <br>
+</div>
+
+<%= link_to 'Edit', edit_article_path(@article) %> |
+<%= link_to 'Back', articles_path %>
